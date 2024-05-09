@@ -21,7 +21,7 @@ jobs:
         FTP_PASSWORD: ${{ secrets.ftp_password }}
       run: |
         # Conectar al servidor FTP y descargar archivos a la raíz del repositorio local
-        lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://${{ secrets.ftp_host }} --ssl-allow -e "mirror --verbose --only-newer --reverse / ./; bye"
+        lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://${{ secrets.ftp_host }} ssl:verify-certificate false -e "mirror --verbose --only-newer --reverse / ./; bye"
 
     - name: 🔄 Detectar cambios y hacer commit
       run: |
