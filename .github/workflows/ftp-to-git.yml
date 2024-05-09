@@ -20,7 +20,8 @@
 #         FTP_USERNAME: ${{ secrets.ftp_username }}
 #         FTP_PASSWORD: ${{ secrets.ftp_password }}
 #       run: |
-#         lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://${{ secrets.ftp_host }} -e "mirror --verbose --only-newer --reverse /path/en/github /path/en/ftp; bye"
+
+# lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://${{ secrets.ftp_host }} -e "mirror --verbose --only-newer --reverse /public_html /path/local/temp; bye"
 
 #     - name: 🔄 Detectar cambios y hacer commit
 #       run: |
