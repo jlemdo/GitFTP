@@ -15,22 +15,20 @@ jobs:
     - name: 📡 Instalar cliente FTP
       run: sudo apt-get update && sudo apt-get install lftp
 
-    - name: 🔄 Detectar y descargar cambios desde FTP
+    - name: 🔄 Detectar cambios desde FTP
+      id: detect-changes
       env:
         FTP_USERNAME: ${{ secrets.ftp_username }}
         FTP_PASSWORD: ${{ secrets.ftp_password }}
       run: |
-        # Conectar al servidor FTP y descargar archivos a la raíz del repositorio local
-        lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://${{ secrets.ftp_host }} -e "set ssl:verify-certificate no; mirror --verbose --only-newer --reverse / ./; bye"
+        changes=$(lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://${{ secrets.ftp_host }} -e "set ssl:verify-certificate no; mirror --verbose --only-newer --reverse --dry-run / ./; bye" | grep -E '^Transferring|^Deleting' | wc -l)
+        echo "::set-output name=changes::$changes"
 
-    - name: 🔄 Detectar cambios y hacer commit
+    - name: 🔄 Sincronizar cambios con GitHub
+      if: steps.detect-changes.outputs.changes > 0
       run: |
-        if [ -z "$(git status --porcelain)" ]; then
-          echo "No hay cambios para actualizar."
-        else
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
-          git add .
-          git commit -m "Actualizar cambios desde FTP"
-          git push
-          
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add .
+        git commit -m "Actualizar cambios desde FTP"
+        git push
