@@ -32,7 +32,7 @@ jobs:
       - name: 🔄 Configurar Git con token de acceso
         run: |
           git config --global user.email "jlelpella@gmail.com"
-          git config --global user.name "jlemdo"
+          git config --global user.name "luis montes"
           # Asegúrate de que tu token esté almacenado en las Secrets de GitHub
           git remote set-url origin https://x-access-token:${{ secrets.ftp_token }}@github.com/jlemdo/GitFTP.git
 
@@ -47,4 +47,3 @@ jobs:
             git commit -m "Actualizar cambios desde FTP"
             git push
           fi
-          
