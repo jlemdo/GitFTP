@@ -22,9 +22,12 @@ jobs:
           FTP_PASSWORD: ${{ secrets.ftp_password }}
           FTP_HOST: ${{ secrets.ftp_host }}
         run: |
-          lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --verbose --only-newer --delete ./ ./; bye"
+          lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --exclude-glob .git/ --exclude-glob .github/ --verbose --only-newer --delete ./ ./; bye"
           echo "Listando archivos después de la sincronización FTP:"
           ls -la
+          echo "Verificando la existencia del directorio .git:"
+          ls -la .git
+
 
       - name: 🔄 Verificar estado de Git antes de cambios
         run: |
