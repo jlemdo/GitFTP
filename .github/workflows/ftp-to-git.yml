@@ -34,7 +34,7 @@ jobs:
           git config --global user.email "jlelpella@gmail.com"
           git config --global user.name "jlemdo"
           # Asegúrate de que tu token esté almacenado en las Secrets de GitHub
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/jlemdo/GitFTP.git
+          git remote set-url origin https://x-access-token:${{ secrets.ftp_token }}@github.com/jlemdo/GitFTP.git
 
       - name: 🔄 Verificar estado de Git y hacer commit
         run: |
