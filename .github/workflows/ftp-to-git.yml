@@ -30,9 +30,13 @@ jobs:
           FTP_HOST: ${{ secrets.ftp_host }}
         run: |
           lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --verbose --only-newer --delete ./ ./; bye"
+          echo "Listando archivos después de la sincronización FTP:"
+          ls -la
 
       - name: 🔄 Detectar cambios y hacer commit
         run: |
+          echo "Estado de Git después de la sincronización FTP:"
+          git status --porcelain
           if [ -z "$(git status --porcelain)" ]; then
             echo "No hay cambios para actualizar."
           else
