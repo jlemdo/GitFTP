@@ -8,7 +8,7 @@ on:
   push:
     branches:
       - main # Cambia 'main' por el nombre de tu rama principal si es diferente
-      
+
 jobs:
   ftp-sync:
     name: 🔄 Sync FTP Changes to GitHub
@@ -38,3 +38,4 @@ jobs:
             git add .
             git commit -m "Actualizar cambios desde FTP"
             git push
+          fi
