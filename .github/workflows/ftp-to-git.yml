@@ -14,28 +14,29 @@ jobs:
     name: 🔄 Sync FTP Changes to GitHub
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Checkout código
-      uses: actions/checkout@v2
+      - name: 🚚 Checkout código
+        uses: actions/checkout@v2
 
-    - name: 📡 Instalar cliente FTP
-      run: sudo apt-get update && sudo apt-get install lftp
+      - name: 📡 Instalar cliente FTP
+        run: sudo apt-get update && sudo apt-get install lftp
 
-    - name: 🔄 Detectar y descargar cambios desde FTP
-      env:
-        FTP_USERNAME: ${{ secrets.ftp_username }}
-        FTP_PASSWORD: ${{ secrets.ftp_password }}
-        FTP_HOST: ${{ secrets.ftp_host }}
-      run: |
-        lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --verbose --only-newer --delete ./ ./; bye"
+      - name: 🔄 Detectar y descargar cambios desde FTP
+        env:
+          FTP_USERNAME: ${{ secrets.ftp_username }}
+          FTP_PASSWORD: ${{ secrets.ftp_password }}
+          FTP_HOST: ${{ secrets.ftp_host }}
+        run: |
+          lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --verbose --only-newer --delete ./ ./; bye"
 
-    - name: 🔄 Detectar cambios y hacer commit
-      run: |
-        if [ -z "$(git status --porcelain)" ]; then
-          echo "No hay cambios para actualizar."
-        else
-          git config --global user.email "jlelpella@gmail.com"
-          git config --global user.name "emdo"
-          git add .
-          git commit -m "Actualizar cambios desde FTP"
-          git push
-        fi
+      - name: 🔄 Detectar cambios y hacer commit
+        working-directory: ${{ github.workspace }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No hay cambios para actualizar."
+          else
+            git config --global user.email "jlelpella@gmail.com"
+            git config --global user.name "emdo"
+            git add .
+            git commit -m "Actualizar cambios desde FTP"
+            git push
+          fi
