@@ -1,24 +1,27 @@
 name: 🔄 Sync FTP to GitHub
 
-# on:
-#   schedule:
-#     - cron: "*/1 * * * *" # Este cron job corre cada 30 minutos
-
 on:
   push:
     branches:
-      - main # Cambia 'main' por el nombre de tu rama principal si es diferente
+      - main # Asegúrate de cambiar 'main' por el nombre de tu rama principal si es diferente
 
 jobs:
   ftp-sync:
     name: 🔄 Sync FTP Changes to GitHub
     runs-on: ubuntu-latest
+
     steps:
       - name: 🚚 Checkout código
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: 📡 Instalar cliente FTP
         run: sudo apt-get update && sudo apt-get install lftp
+
+      - name: Verificar directorio actual y estado de Git
+        run: |
+          pwd
+          ls -la
+          git status
 
       - name: 🔄 Detectar y descargar cambios desde FTP
         env:
@@ -29,7 +32,6 @@ jobs:
           lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --verbose --only-newer --delete ./ ./; bye"
 
       - name: 🔄 Detectar cambios y hacer commit
-        working-directory: ${{ github.workspace }}
         run: |
           if [ -z "$(git status --porcelain)" ]; then
             echo "No hay cambios para actualizar."
