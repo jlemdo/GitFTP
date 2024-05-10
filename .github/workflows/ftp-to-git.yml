@@ -47,4 +47,3 @@ jobs:
             git commit -m "Actualizar cambios desde FTP"
             git push
           fi
-          
