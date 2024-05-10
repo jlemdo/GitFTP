@@ -33,5 +33,4 @@ jobs:
           git config --global user.name "GitHub Actions"
           git add .
           git commit -m "Actualizar cambios desde FTP"
-          git push
-          
+          git push   
