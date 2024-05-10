@@ -3,25 +3,18 @@ name: 🔄 Sync FTP to GitHub
 on:
   push:
     branches:
-      - main # Asegúrate de cambiar 'main' por el nombre de tu rama principal si es diferente
+      - main
 
 jobs:
   ftp-sync:
     name: 🔄 Sync FTP Changes to GitHub
     runs-on: ubuntu-latest
-
     steps:
       - name: 🚚 Checkout código
         uses: actions/checkout@v3
 
       - name: 📡 Instalar cliente FTP
         run: sudo apt-get update && sudo apt-get install lftp
-
-      - name: Verificar directorio actual y estado de Git
-        run: |
-          pwd
-          ls -la
-          git status
 
       - name: 🔄 Detectar y descargar cambios desde FTP
         env:
@@ -33,9 +26,10 @@ jobs:
           echo "Listando archivos después de la sincronización FTP:"
           ls -la
 
-      - name: 🔄 Detectar cambios y hacer commit
+      - name: 🔄 Verificar estado de Git antes de cambios
         run: |
-          echo "Estado de Git después de la sincronización FTP:"
+          pwd
+          ls -la
           git status --porcelain
           if [ -z "$(git status --porcelain)" ]; then
             echo "No hay cambios para actualizar."
@@ -45,4 +39,9 @@ jobs:
             git add .
             git commit -m "Actualizar cambios desde FTP"
             git push
-          fi
+
+      - name: 🔄 Verificar estado después de la sincronización FTP
+        run: |
+          pwd
+          ls -la
+          git status --porcelain
