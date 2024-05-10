@@ -1,8 +1,13 @@
 name: 🔄 Sync FTP to GitHub
 
+# on:
+#   schedule:
+#     - cron: "*/1 * * * *" # Este cron job corre cada 30 minutos
+
 on:
-  schedule:
-    - cron: '*/1 * * * *'
+  push:
+    branches:
+      - main # Cambia 'main' por el nombre de tu rama principal si es diferente
 
 jobs:
   ftp-sync:
