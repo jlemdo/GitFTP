@@ -35,7 +35,7 @@ jobs:
             echo "No hay cambios para actualizar."
           else
             git config --global user.email "jlelpella@gmail.com"
-            git config --global user.name "emdo"
+            git config --global user.name "jlemdo"
             git add .
             git commit -m "Actualizar cambios desde FTP"
             git push
