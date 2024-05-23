@@ -31,7 +31,7 @@ jobs:
 
       - name: 🔄 Sincronizar archivos desde directorio temporal al repositorio local
         run: |
-          rsync -av --delete ftp_download/ ./
+          rsync -av --delete --ignore-missing-args ftp_download/ ./
           echo "Listando archivos después de rsync:"
           ls -la
 
