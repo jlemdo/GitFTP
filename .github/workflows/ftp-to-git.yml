@@ -14,8 +14,8 @@ jobs:
       - name: 🚚 Checkout código
         uses: actions/checkout@v3
 
-      - name: 📡 Instalar cliente FTP y rsync
-        run: sudo apt-get update && sudo apt-get install lftp rsync
+      - name: 📡 Instalar cliente FTP
+        run: sudo apt-get update && sudo apt-get install lftp
 
       - name: 🔄 Detectar y descargar cambios desde FTP
         env:
@@ -23,17 +23,11 @@ jobs:
           FTP_PASSWORD: ${{ secrets.ftp_password }}
           FTP_HOST: ${{ secrets.ftp_host }}
         run: |
-          # Crear directorio temporal para los archivos descargados
-          mkdir -p ftp_download
-          lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --verbose --delete --no-empty-dirs --no-perms ./ ftp_download; bye"
+          lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --exclude-glob .git/ --exclude-glob .github/ --exclude-glob /dev/ --verbose --only-newer --delete ./ ./; bye"
           echo "Listando archivos después de la sincronización FTP:"
-          ls -la ftp_download
-
-      - name: 🔄 Sincronizar archivos desde directorio temporal al repositorio local
-        run: |
-          rsync -av --delete ftp_download/ ./ || (exit_code=$? && [ $exit_code -eq 24 ] && echo "Ignoring vanished files error" || exit $exit_code)
-          echo "Listando archivos después de rsync:"
           ls -la
+          echo "Verificando la existencia del directorio .git:"
+          ls -la .git
 
       - name: 🔄 Configurar Git con token de acceso
         run: |
@@ -47,6 +41,5 @@ jobs:
           echo "Estado de Git antes de agregar archivos:"
           git status
           git add --all
-          git status  # Verificar que los archivos se han añadido correctamente
           git commit -m "Actualizar cambios desde FTP" || echo "No hay cambios para commit"
           git push
