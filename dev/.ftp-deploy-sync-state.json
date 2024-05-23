@@ -1,0 +1,847 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1716308301320,
+    "data": [
+        {
+            "type": "file",
+            "name": ".htaccess",
+            "size": 574,
+            "hash": "9df16e7f51e95c9b4db6da362cebdb06da5b494e589e6f6d3c1c5c49ae89b808"
+        },
+        {
+            "type": "file",
+            "name": "about.html",
+            "size": 34451,
+            "hash": "573488b4a1a7a06fd6514b1bbe62192181a55bac26593285f1e89f36dc3cc951"
+        },
+        {
+            "type": "file",
+            "name": "contact.html",
+            "size": 20405,
+            "hash": "a1c621835c69770afaa5851dde6dba13dc8e553d6dcd035ac15ab106f13cf629"
+        },
+        {
+            "type": "file",
+            "name": "contact.php",
+            "size": 3638,
+            "hash": "0308371df25b54d8d0af2612fcd2bc224519d7663de2251eb0b43a7dd468f5e6"
+        },
+        {
+            "type": "folder",
+            "name": "css"
+        },
+        {
+            "type": "file",
+            "name": "favicon.ico",
+            "size": 1150,
+            "hash": "0fe3de811484e30419cf029199c7c6e81b7a3b869f10e963fb099b7cd918b4bc"
+        },
+        {
+            "type": "file",
+            "name": "favicon.png",
+            "size": 15313,
+            "hash": "fec6916863e6edb0a698705b6f97eb66c2226918d43cb88fac04df8ae1b2a14d"
+        },
+        {
+            "type": "folder",
+            "name": "images"
+        },
+        {
+            "type": "file",
+            "name": "index-showcase-carousel.html",
+            "size": 28885,
+            "hash": "26fe9e00adbe6aea5464314c5d8dc793b50c390dcb3cba51454d2b0de118bdd5"
+        },
+        {
+            "type": "file",
+            "name": "index-showcase-gallery.html",
+            "size": 38144,
+            "hash": "cffeb108382acc0384945fc761bea0f4cce2a81293a715e37776edfd01261d95"
+        },
+        {
+            "type": "file",
+            "name": "index-showcase-grid.html",
+            "size": 31496,
+            "hash": "500c2e8fb65a719cba09c1d7b7566f119bb4c4f148400f5de0c99ef8e891d936"
+        },
+        {
+            "type": "file",
+            "name": "index-showcase-list.html",
+            "size": 31918,
+            "hash": "6b545177308b37b57cf4e67e7e045d9f361058a9ac179275d98b58bfe56c1726"
+        },
+        {
+            "type": "file",
+            "name": "index-showcase-slider.html",
+            "size": 27793,
+            "hash": "02e7c8f83e1f82dd3458605e99e8786a22679d803a7452ca65254f562b306581"
+        },
+        {
+            "type": "file",
+            "name": "index.html",
+            "size": 38187,
+            "hash": "2cfce0dbd43639b28d6309d4d6df56569f1932fb29074391a9d974f656c9439a"
+        },
+        {
+            "type": "folder",
+            "name": "js"
+        },
+        {
+            "type": "file",
+            "name": "multimedia.html",
+            "size": 41982,
+            "hash": "c285480a3e8261971f3fd6aac507d14df161e8e75f9c4ec32ca0cfad9f328cd4"
+        },
+        {
+            "type": "file",
+            "name": "project01.html",
+            "size": 21255,
+            "hash": "c48b20bb52c40dc1a0ba5de9fbd796b80a2f6a972e72e89adf52345f72867497"
+        },
+        {
+            "type": "file",
+            "name": "project02.html",
+            "size": 20021,
+            "hash": "1ecc6f8c597ce3a19b8abde5e8de854d8e833957457d9f99effd38c6173f0737"
+        },
+        {
+            "type": "file",
+            "name": "project03.html",
+            "size": 21611,
+            "hash": "d7f46f62e08e65f4c00d873cbe7414ea7e05bbc863d08bbfe29e22444b258371"
+        },
+        {
+            "type": "file",
+            "name": "project04.html",
+            "size": 29844,
+            "hash": "2b770925f8dbe15fc4a467e71d51e180e750c08434386894c416767b03d4a832"
+        },
+        {
+            "type": "file",
+            "name": "project05.html",
+            "size": 23922,
+            "hash": "83b374f8e4402db7285980771d6bdec26dd89f20a3ef47126e93c9749b8af4df"
+        },
+        {
+            "type": "file",
+            "name": "project06.html",
+            "size": 23739,
+            "hash": "ab224b5f4a19340330ad00ef72bbc7281542bb3c6828b92440bd672e0fa2a8d3"
+        },
+        {
+            "type": "file",
+            "name": "project07.html",
+            "size": 23326,
+            "hash": "48cac6104019e6de8e20f0fed60df3a8b38b97e137b722ef5a7450e66bdde5f6"
+        },
+        {
+            "type": "file",
+            "name": "project08.html",
+            "size": 20603,
+            "hash": "4c86c6341a7c6878660e1626516eb924ec08867a14792638914b3efac6d7536c"
+        },
+        {
+            "type": "file",
+            "name": "robots.txt",
+            "size": 26,
+            "hash": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+        },
+        {
+            "type": "file",
+            "name": "shortcodes.html",
+            "size": 31262,
+            "hash": "7a3703e5c8160e660fe12f6fe5ec91ecb51fcfaf34c700f1680dd622ecf058dd"
+        },
+        {
+            "type": "file",
+            "name": "style.css",
+            "size": 73833,
+            "hash": "eb24f3704322aa5bcbc3a456fb52170004697eace376eb2fc21c9ad166aa5b77"
+        },
+        {
+            "type": "file",
+            "name": "typography.html",
+            "size": 42887,
+            "hash": "5ccc8a5b0d4bb87bd3bab092eada64505056ce04de7545283e678be55c1181ee"
+        },
+        {
+            "type": "folder",
+            "name": "webfonts"
+        },
+        {
+            "type": "file",
+            "name": "css/all.min.css",
+            "size": 100782,
+            "hash": "0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed"
+        },
+        {
+            "type": "file",
+            "name": "css/assets.css",
+            "size": 16155,
+            "hash": "4580dffb1d86efad30a37c1b5a105477448c35ce8f806fe97cc79528f2d15900"
+        },
+        {
+            "type": "file",
+            "name": "css/content.css",
+            "size": 24152,
+            "hash": "f2cbc10ae2446dd11dd30c8f2a3471a88257b99f1e1fdbf4302fbdc64f631793"
+        },
+        {
+            "type": "file",
+            "name": "css/shortcodes.css",
+            "size": 74125,
+            "hash": "4a0b8ba0f47ba43285ca0f933ac91669f6c2eca2a06a91a45d2a8f84f492ba1d"
+        },
+        {
+            "type": "file",
+            "name": "css/showcase.css",
+            "size": 59481,
+            "hash": "d316711f8952f39e0a0b5e4f0597e4fad05d80bee98ed0c51f6da6b04dfeaa7d"
+        },
+        {
+            "type": "file",
+            "name": "css/portfolio.css",
+            "size": 12463,
+            "hash": "3b98dc603a58372fe9d734873dba95bb6f5a42374f1bde9ef831e8cabe4ae39e"
+        },
+        {
+            "type": "file",
+            "name": "images/00hero.jpg",
+            "size": 38918,
+            "hash": "8600b9c85917833362981c8913836177672e53228b9f2c213cc9d5d813f4913c"
+        },
+        {
+            "type": "file",
+            "name": "images/01hero.jpg",
+            "size": 44873,
+            "hash": "9d39a0bfd88c0d38e340344531f476d60690616fa54b3d54c36091c5ea88fe21"
+        },
+        {
+            "type": "file",
+            "name": "images/02hero.jpg",
+            "size": 61016,
+            "hash": "15ae3dc89d1201e27b76812dec162352b0521011aed0ca2d5a09e3314b7243ad"
+        },
+        {
+            "type": "file",
+            "name": "images/03hero.jpg",
+            "size": 48168,
+            "hash": "fae60ffca577b477826c56a4f28b1a5e81688404fe50162912d02c37a189f6a5"
+        },
+        {
+            "type": "file",
+            "name": "images/04hero.jpg",
+            "size": 35383,
+            "hash": "1f91d8dd3b3455c23996ffcfa1a6e363d1e9311bc9587f8f69c1fb46106eed28"
+        },
+        {
+            "type": "file",
+            "name": "images/05hero.jpg",
+            "size": 55224,
+            "hash": "a511f06ce8666778ede5707c069aebf03ef4a94ffd6c92be96e1b6e9eaa16a48"
+        },
+        {
+            "type": "file",
+            "name": "images/06hero.jpg",
+            "size": 46798,
+            "hash": "8068cef9f3b8d5894fc8d50841de5b8f3347bf028d76376c9e16c41cece2d017"
+        },
+        {
+            "type": "file",
+            "name": "images/07hero.jpg",
+            "size": 43902,
+            "hash": "aa5401632ca8dfdbdf00f02be6f0854c262f5adfb7c7f229c4db8dd1d1b6d72d"
+        },
+        {
+            "type": "file",
+            "name": "images/08hero.jpg",
+            "size": 42901,
+            "hash": "d218f1a99679a1286a6a432e5e6becad99d14b1f5be2222cdfdb4c997152fa9f"
+        },
+        {
+            "type": "file",
+            "name": "images/Thumbs.db",
+            "size": 222208,
+            "hash": "28419b103ff5c139343e06f28499e94d22cb8a0dcb5ceda2ed143faa1e14c635"
+        },
+        {
+            "type": "file",
+            "name": "images/about.jpg",
+            "size": 44195,
+            "hash": "c85c7c19c20058e5c5379a99cd109f7f8db7435552b8cba24db7af4dfea119de"
+        },
+        {
+            "type": "file",
+            "name": "images/client-01-black.png",
+            "size": 8520,
+            "hash": "36cf368c431b68cf03db336c5872dbc2f8ab5e43f6b148d8deb73d0971ce223b"
+        },
+        {
+            "type": "file",
+            "name": "images/client-01.png",
+            "size": 8502,
+            "hash": "0884220b4e2761e4a2658896db3121701b82245cf050cafeae443254300887f6"
+        },
+        {
+            "type": "file",
+            "name": "images/client-02-black.png",
+            "size": 3817,
+            "hash": "785b7a2b8c8b3c108720f00627fbf3e167bf1ab3a82e0f28b7858f43b2ec2d41"
+        },
+        {
+            "type": "file",
+            "name": "images/client-02.png",
+            "size": 3795,
+            "hash": "72648d404ed39c077b46321e70abe5dcfe73fb8536c70178f870f5602765a7b8"
+        },
+        {
+            "type": "file",
+            "name": "images/client-03-black.png",
+            "size": 4906,
+            "hash": "3c58c4793bee94b5dc419dfd731026b5a30e0586f3fe7442ff762e437ffdd349"
+        },
+        {
+            "type": "file",
+            "name": "images/client-03.png",
+            "size": 4851,
+            "hash": "136ddcd8779562940719e5ff00241560f4efc0f08ad43a2b12d2fd498d772f6b"
+        },
+        {
+            "type": "file",
+            "name": "images/client-04-black.png",
+            "size": 11013,
+            "hash": "bbac7ce2932d3fdbc68cd24b6b0b5f700c7c78aa7d5320b8aa4dafcb9cbd3bf7"
+        },
+        {
+            "type": "file",
+            "name": "images/client-04.png",
+            "size": 10972,
+            "hash": "42cda66dd4ce0041fb10b3f0147e8022be47834639fbee4f1da2ad9f5171448c"
+        },
+        {
+            "type": "file",
+            "name": "images/client-05-black.png",
+            "size": 6573,
+            "hash": "4dd72fe14c515af6efbde2582dd65817cf261dd64b476b0c24506b5cef9530eb"
+        },
+        {
+            "type": "file",
+            "name": "images/client-05.png",
+            "size": 6489,
+            "hash": "370f8f443f8c8f1f8b7ee571ce888b7d38b28ce4eb8f231082ae389b97219f19"
+        },
+        {
+            "type": "file",
+            "name": "images/client-06-black.png",
+            "size": 3582,
+            "hash": "b64294bf9eb48f2cf3c2be1b9f356d8e24b57489599923284e84d6dad228ca2e"
+        },
+        {
+            "type": "file",
+            "name": "images/client-06.png",
+            "size": 3558,
+            "hash": "ab28ccb58c30030f1a5a1780c7b7fdf774f2555f7470dd0ae7cf2bc914403e27"
+        },
+        {
+            "type": "file",
+            "name": "images/client-07-black.png",
+            "size": 5960,
+            "hash": "874d997e400962274d7180ea16f8518f73fb85ae1c61c4cb14c080957f04ec47"
+        },
+        {
+            "type": "file",
+            "name": "images/client-07.png",
+            "size": 5925,
+            "hash": "2100aec8953257888090fff7aa842411a672ac7eb8ab40e2c48e8929a98e5d9e"
+        },
+        {
+            "type": "file",
+            "name": "images/client-08-black.png",
+            "size": 5272,
+            "hash": "65755b37fc7fcd4c96714dd95c107d9cdf36e4fa7b690c5765a63afc415c321d"
+        },
+        {
+            "type": "file",
+            "name": "images/client-08.png",
+            "size": 5184,
+            "hash": "41e0abd0ba2a0916978553f639e11c1db3199dd679c690bdeb5f5dc06f30a688"
+        },
+        {
+            "type": "file",
+            "name": "images/clients-bottom-white.png",
+            "size": 1172,
+            "hash": "7bc2abd2bd3744b3f41dd05da5ef18b19dc4db1bdb564362aac1b5046110bacc"
+        },
+        {
+            "type": "file",
+            "name": "images/clients-bottom.png",
+            "size": 15141,
+            "hash": "556cbc0f34b96909ccb75291440ed42636c4f9e5c5445d769405df6cca691c11"
+        },
+        {
+            "type": "file",
+            "name": "images/clients-middle-white.png",
+            "size": 1174,
+            "hash": "3e03c7b4aad589677a6298348810c19ee007e8dedb9501cd6cec7690b77d70db"
+        },
+        {
+            "type": "file",
+            "name": "images/clients-middle.png",
+            "size": 15144,
+            "hash": "5107aed7b7b270ed6d01f177be5e4be26a7b02e5eed6f5f6609a3d3b726141c5"
+        },
+        {
+            "type": "file",
+            "name": "images/clients-top-white.png",
+            "size": 1166,
+            "hash": "d21a9f616e4bb1c410497328cbf66e385d09ee54c06244ffd9c0e96aeef59774"
+        },
+        {
+            "type": "file",
+            "name": "images/clients-top.png",
+            "size": 15137,
+            "hash": "eab245e14bff1c0cf928f00f4118272bb529c1f08b0d8582065b899babe22536"
+        },
+        {
+            "type": "file",
+            "name": "images/logo-white.png",
+            "size": 2950,
+            "hash": "e62f88b4a3c81d2b9f8bbc23cd1ad2454e1b9eaa911887a529fde124c6b42b31"
+        },
+        {
+            "type": "file",
+            "name": "images/logo.png",
+            "size": 3133,
+            "hash": "9b089117dd71f69dc13eb22e13a591bb609ef325019547aca0b879b4d0aea9a3"
+        },
+        {
+            "type": "file",
+            "name": "images/marker.png",
+            "size": 2627,
+            "hash": "b89a05a09b69ca6f5ec47a012caa9e6952b6e6ac957a335682e428d8edd3e4c6"
+        },
+        {
+            "type": "folder",
+            "name": "images/projects"
+        },
+        {
+            "type": "file",
+            "name": "images/rotate.png",
+            "size": 5381,
+            "hash": "3ca8c438e8030a43c0d4634bb2cc412a6f288ff02c5fb9ed939c83b9c162f9d6"
+        },
+        {
+            "type": "folder",
+            "name": "images/shortcodes"
+        },
+        {
+            "type": "file",
+            "name": "images/team1.jpg",
+            "size": 14483,
+            "hash": "e4ace2dd66213c8f2a72f8ea5243e64414fe8a2b8498ed604b6df7ef783ddfb0"
+        },
+        {
+            "type": "file",
+            "name": "images/team2.jpg",
+            "size": 14731,
+            "hash": "ae72e27a8d8f50c0704af9ff4286f4a74e3980023b18501786234905838dba5e"
+        },
+        {
+            "type": "file",
+            "name": "images/team3.jpg",
+            "size": 14378,
+            "hash": "cc440b1bf7732df2eae4d9fb68946b3581cd51726c7e60083036be5ba6f946ee"
+        },
+        {
+            "type": "file",
+            "name": "images/team4.jpg",
+            "size": 14180,
+            "hash": "1f81a1e92a42bf9d5933800f693158384ea4261d56e7349ce70a0d5d3ea0fea7"
+        },
+        {
+            "type": "file",
+            "name": "images/team5.jpg",
+            "size": 114982,
+            "hash": "0562fd7095832ba8a3cbe980b61c2c47e90437be4cf3c234cb7d3f68c480c35e"
+        },
+        {
+            "type": "file",
+            "name": "js/clapat.js",
+            "size": 23837,
+            "hash": "b5a78418075fd90d70084a9a751c9a6647263d6639c9f806eb78e0cb20de5306"
+        },
+        {
+            "type": "file",
+            "name": "js/common.js",
+            "size": 124023,
+            "hash": "e76aa2a7f5e5fb2a8ef2b1ca703b7feca53c7b5c9aa865f8919eac77c3380ebf"
+        },
+        {
+            "type": "file",
+            "name": "js/contact.js",
+            "size": 5889,
+            "hash": "2a195eeb95013e8bf905ed08b92ab0f6cf4be02dd0f882bdfcaffc2c79b6807a"
+        },
+        {
+            "type": "file",
+            "name": "js/plugins.js",
+            "size": 66720,
+            "hash": "69ba4e49cdfa23b126796dc4d2cba1c0f8f560aa6e8d2c02642adb7e7fc73a6b"
+        },
+        {
+            "type": "file",
+            "name": "js/jquery.min.js",
+            "size": 89501,
+            "hash": "ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e"
+        },
+        {
+            "type": "file",
+            "name": "js/scripts.js",
+            "size": 116172,
+            "hash": "a951b092b067e297390693c62f741764cbc2f4a4f6158f86eb67547ff9e1f4bd"
+        },
+        {
+            "type": "file",
+            "name": "webfonts/fa-brands-400.ttf",
+            "size": 181852,
+            "hash": "e523f49c12b13a176014af1a46ae5a0545b136bf56d496426aa881026d0c318a"
+        },
+        {
+            "type": "file",
+            "name": "webfonts/fa-brands-400.woff2",
+            "size": 105536,
+            "hash": "404c746c8f7e3f9b7611a8f23d908c1a32a5c972236b9d89bb68b05d9bf4b905"
+        },
+        {
+            "type": "file",
+            "name": "webfonts/fa-regular-400.ttf",
+            "size": 60520,
+            "hash": "4e96a7e098e36fd493194c64e973ba5237da65760c7b746217e63c830326a9ac"
+        },
+        {
+            "type": "file",
+            "name": "webfonts/fa-regular-400.woff2",
+            "size": 23940,
+            "hash": "6a274e7629c0d71dcf8cab1e7733687ebfe32e2c53b4ca9fad050b4f1d5471f3"
+        },
+        {
+            "type": "file",
+            "name": "webfonts/fa-solid-900.ttf",
+            "size": 388460,
+            "hash": "03f2986c0824c68bdaf1e16947352f5fe417d03741806097fa9ea7131fe3a019"
+        },
+        {
+            "type": "file",
+            "name": "webfonts/fa-solid-900.woff2",
+            "size": 154228,
+            "hash": "d76fb4e841748a3f6bc63efa23156e02631c283bf41f84efcbdaf339ea3e1b73"
+        },
+        {
+            "type": "file",
+            "name": "webfonts/fa-v4compatibility.ttf",
+            "size": 10556,
+            "hash": "86a687cf5ade691e19aa03720ffa7c1ba99dd137f36cc61980eec447f2160627"
+        },
+        {
+            "type": "file",
+            "name": "webfonts/fa-v4compatibility.woff2",
+            "size": 4960,
+            "hash": "0db31befb4837c56bf176e879a715b5cdf457553fc7e8877f974b4c6ef75b1b1"
+        },
+        {
+            "type": "file",
+            "name": "webfonts/mona-sans-extraboldwide-webfont.woff",
+            "size": 21900,
+            "hash": "d063ec88a54977140bd495425e3e7efcdf2ba0fcdf7b8f79a03b8f8a4dc052c6"
+        },
+        {
+            "type": "file",
+            "name": "webfonts/mona-sans-extraboldwide-webfont.woff2",
+            "size": 16504,
+            "hash": "23736001cbe6ffb46dd85f72e9a3cc2f0a3f432abb675404743325ba699e2103"
+        },
+        {
+            "type": "file",
+            "name": "webfonts/mona-sans-lightwide-webfont.woff",
+            "size": 22872,
+            "hash": "c380f093ac17309ae1500cac5019fdb4ae89e621775cf1b925fc54e4a993edea"
+        },
+        {
+            "type": "file",
+            "name": "webfonts/mona-sans-lightwide-webfont.woff2",
+            "size": 17288,
+            "hash": "e7e627ebc4a17ffea4dc7f755892843a24e06acabf8507712b4ddf84a812f83e"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/camarades01.jpg",
+            "size": 52674,
+            "hash": "96db82483bdb328e2963cd8e343b8aadcb328c86bdd7ca36323359340c46fcc0"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/camarades02.jpg",
+            "size": 26357,
+            "hash": "7e2daeef71665bac1208164337f1bcb67a249aebe99afa544a077f1ad0b68f9d"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/camarades03.jpg",
+            "size": 26679,
+            "hash": "6eed9b1fa17ae3628fd451b1d07fd69ba72cf0df9849c89ef652dea8058efe59"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/camarades04.jpg",
+            "size": 29146,
+            "hash": "0f96b018e5e01ffbf49a9f2254d824dbaf3982a1ee038cfbafe44eaf7a9acfb8"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/camarades05.jpg",
+            "size": 28874,
+            "hash": "e408461b26a0e5bf6c89ca976f0033b743912f125b46e0cdab66f12a248e19e2"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/camarades06.jpg",
+            "size": 26105,
+            "hash": "4ebfb9e98eb320736bfe6994f534cc8fccfa8ee1b9ef23f55acd8aa8d1e9e31d"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/camarades07.jpg",
+            "size": 30067,
+            "hash": "d8cb246a2b05fafdab86034124f30546c7170def17eff1444c9285d21124c6a2"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/cast01.jpg",
+            "size": 14819,
+            "hash": "ad66293b99d054611b3497bc44c6354d7a06e6a93bc89fbc7fae3afdf896c5c2"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/cast02.jpg",
+            "size": 20157,
+            "hash": "626dd0fb5518606cc049fc3be1a66dd8582eeea085a2e700afcaf87a60472a1d"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/cast03.jpg",
+            "size": 16303,
+            "hash": "1bb926287e87a7f9d2c5c5dd45fdfbd6060533f36560fe05f0dec0605fdf696c"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/cast04.jpg",
+            "size": 36094,
+            "hash": "e24f843546b166969960d50742d2607297d8a7e7bb9c7b8b79227d30d90874c4"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/heritage01.jpg",
+            "size": 32007,
+            "hash": "0c89d00500d9dc1eb11eec88d243794b564f710cb6417f5e81d65d65d99519ba"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/heritage02.jpg",
+            "size": 29736,
+            "hash": "f73940b5a682369ec2adcb7412d148c94ea07e8e1498d44141652d66be54ff89"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/heritage03.jpg",
+            "size": 25682,
+            "hash": "6570bee501bfd235ae2d4f69809756f8ae03da40c0bb5fb1549260c56e11509e"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/heritage04.jpg",
+            "size": 30688,
+            "hash": "49d4a2dbb14952fa587dd048e402553c8872f5067cc731d891d33d2d2e5813ed"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/leafs01.jpg",
+            "size": 21638,
+            "hash": "c3cb9ec4191b48b27b0115285eb508af5db1328ebcb42a3c39a6b3e6f702770a"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/leafs02.jpg",
+            "size": 24585,
+            "hash": "55d8e5a5f3467b9bd689963248ddbca7473a80b193a35dce6efc8e99137efde7"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/leafs03.jpg",
+            "size": 25178,
+            "hash": "35ef00d0cbb196e09de229d9fb9821c846c71358a98da58c5233593345259bb2"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/manifesto01.jpg",
+            "size": 25434,
+            "hash": "df23226a9696e517ea826105185e7281e52a5ee86cf8822934a3c9ff7395cc59"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/manifesto02.jpg",
+            "size": 24115,
+            "hash": "5996a17c7c1475daabf2e8c8377d8c9df41d1139c947b17e03a5223ec480d60b"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/manifesto03.jpg",
+            "size": 28160,
+            "hash": "ac8adcf0dc41204e376f1e57005a0facf8cade82c12f792b67064370c70559a1"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/serene01.jpg",
+            "size": 56119,
+            "hash": "3fdc894ae733f053dc4dd27e145cde230a0136815259557a653b7552c94e2805"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/serene02.jpg",
+            "size": 44351,
+            "hash": "d4414fe8403b97b54ea502da1a8ad5efd061aa1734ac3c05f41ce79782450100"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/serene03.jpg",
+            "size": 47901,
+            "hash": "b7da6a162868b4c5dc575fe3c1c03d36c130afd04b3aef1176b88743334c4a0d"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/serene04.jpg",
+            "size": 35679,
+            "hash": "a82901a32d7a4247076bd0cdd31c71a4e4b878c1878f23f0bbbf7189e3bed199"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/serene05.jpg",
+            "size": 34231,
+            "hash": "4be296ea81c35d22041cde9f9c0236230ac95117a547eab1a41240dad9dbb7b9"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/storm01.jpg",
+            "size": 42845,
+            "hash": "bc094474fcf655072b630e2019b5778b1da565eeeb72f7a7b265745db03de434"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/storm02.jpg",
+            "size": 50152,
+            "hash": "ed958415fbf10f092e12050244cf969fc8d76fb823458aa575f17be8657f3e5d"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/storm03.jpg",
+            "size": 38428,
+            "hash": "c57c0bcaf4bb63c39bd9888b11c0860fc8ff332dd61ef2f7b7a6664d94cbc9b5"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/urbanedge01.jpg",
+            "size": 23901,
+            "hash": "27214fe9894e6b650654955d48ad9b68e2f7b2367bf0d9d6ea117d8f7048d7a7"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/urbanedge02.jpg",
+            "size": 24977,
+            "hash": "a7d884ab6f0465be6cdf5dd6b170ab19aa40dfe322911a6242d58214724f1343"
+        },
+        {
+            "type": "file",
+            "name": "images/projects/urbanedge03.jpg",
+            "size": 67674,
+            "hash": "cdc6aaa488be1114a9782c3622e546a163314e3d8246d158f46ea7f942492420"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/collage01.jpg",
+            "size": 5772,
+            "hash": "08f53d37fae8556f5bcbf40760898fdfad8589c718f38cbe11ad638c09d1bb49"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/collage02.jpg",
+            "size": 7591,
+            "hash": "ac4212fdf219038c3f20366afd94ce1af932094fa48ecb8850dfbf9696318ac2"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/collage03.jpg",
+            "size": 4771,
+            "hash": "75b05d30a90569135b19fafab3f5d9235bf91fb36915a6db0b832f411fbc577e"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/collage04.jpg",
+            "size": 4161,
+            "hash": "fc8a035e6990db0723ca206f090ddfcb78da9240102cb9bb7e5c6841f32fd456"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/collage05.jpg",
+            "size": 4658,
+            "hash": "171a3bbf0c26559aa82c871b8e9ed62c5141e44016652cf0d06209f332071748"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/collage06.jpg",
+            "size": 8452,
+            "hash": "652a6805dc97362f5af7c841d75bec7c3558f4765abda05c09b9b6d9606de108"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/collage07.jpg",
+            "size": 4657,
+            "hash": "3d6d6786d328102c8cac08e4c59cf02c7f0f66a1d531229db4ed84967264243f"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/image01.jpg",
+            "size": 13877,
+            "hash": "58dc32c4a3868426f680b16565f3e2c59eb6353750c5ddeeb5d108edd16002ae"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/image02.jpg",
+            "size": 15879,
+            "hash": "29a53f37c0b6780488da5a2a748e20cc52edf6b35d939af8ee8491a35b2dd542"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/image03.jpg",
+            "size": 16170,
+            "hash": "e3b43cf205bb98838756ebb412b3ecfd193f5663b769a717d4a6210428f71121"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/image04.jpg",
+            "size": 15203,
+            "hash": "5d97ab23b9fc30d39ebdafaeaaef788c028d6e04884d9078b6d478d8df6bad15"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/pinned01.jpg",
+            "size": 5989,
+            "hash": "5446f605ffa2bcaf6e8711593deea18274d07f4b01e0d19a13bc24c7bdc73560"
+        },
+        {
+            "type": "file",
+            "name": "images/shortcodes/pinned02.jpg",
+            "size": 7869,
+            "hash": "ce6611fb3d0d821d237d2d9e305292e0ab4392b7ba55ce4333bc619e216a203c"
+        }
+    ]
+}
