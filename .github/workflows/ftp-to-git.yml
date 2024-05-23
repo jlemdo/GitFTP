@@ -23,7 +23,7 @@ jobs:
           FTP_PASSWORD: ${{ secrets.ftp_password }}
           FTP_HOST: ${{ secrets.ftp_host }}
         run: |
-          lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --exclude-glob .git/ --exclude-glob .github/ --verbose --delete --only-newer --reverse --no-empty-dirs --no-perms ./ ./; bye"
+          lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --exclude-glob .git/ --exclude-glob .github/ --verbose --delete --reverse --no-empty-dirs --no-perms ./ ./; bye"
           echo "Listando archivos después de la sincronización FTP:"
           ls -la
           echo "Verificando la existencia del directorio .git:"
@@ -41,6 +41,6 @@ jobs:
           echo "Estado de Git antes de agregar archivos:"
           git status
           git add --all
+          git status  # Para verificar que los archivos se han añadido correctamente
           git commit -m "Actualizar cambios desde FTP" || echo "No hay cambios para commit"
           git push
- 
