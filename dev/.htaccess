@@ -1,0 +1,19 @@
+# Bloquear el acceso a ciertos robots
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} (baiduspider|bingbot|slurp|teoma|facebookexternalhit|linkedinbot|twitterbot|.*bot) [NC]
+RewriteRule ^.* - [F,L]
+
+# Evitar que el sitio sea indexado por motores de búsqueda
+Header set X-Robots-Tag "noindex, nofollow"
+
+# Proteger el archivo .htaccess
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Bloquear el acceso a los archivos y directorios sensibles
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh|sql)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
