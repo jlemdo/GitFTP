@@ -1,0 +1,50 @@
+# name: 🔄 Sync FTP to GitHub
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   ftp-sync:
+#     name: 🔄 Sync FTP Changes to GitHub
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: 🚚 Checkout código
+#         uses: actions/checkout@v3
+
+#       - name: 📡 Instalar cliente FTP
+#         run: sudo apt-get update && sudo apt-get install lftp
+
+#       - name: 🔄 Detectar y descargar cambios desde FTP
+#         env:
+#           FTP_USERNAME: ${{ secrets.ftp_username }}
+#           FTP_PASSWORD: ${{ secrets.ftp_password }}
+#           FTP_HOST: ${{ secrets.ftp_host }}
+#         run: |
+#           lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --exclude-glob .git/ --exclude-glob .github/ --verbose --only-newer --delete ./ ./; bye"
+#           echo "Listando archivos después de la sincronización FTP:"
+#           ls -la
+#           echo "Verificando la existencia del directorio .git:"
+#           ls -la .git
+
+#       - name: 🔄 Configurar Git con token de acceso
+#         run: |
+#           git config --global user.email "jlelpella@gmail.com"
+#           git config --global user.name "jlemdo"
+#           # Asegúrate de que tu token esté almacenado en las Secrets de GitHub
+#           git remote set-url origin https://x-access-token:${{ secrets.FTP_TOKEN }}@github.com/jlemdo/GitFTP.git
+
+#       - name: 🔄 Verificar estado de Git y hacer commit
+#         run: |
+#           echo "Estado de Git después de la sincronización FTP:"
+#           git status --porcelain
+#           if [ -z "$(git status --porcelain)" ]; then
+#             echo "No hay cambios para actualizar."
+#           else
+#             git add .
+#             git commit -m "Actualizar cambios desde FTP"
+#             git push
+#           fi 
+          

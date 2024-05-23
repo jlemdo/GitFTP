@@ -23,7 +23,7 @@ jobs:
           FTP_PASSWORD: ${{ secrets.ftp_password }}
           FTP_HOST: ${{ secrets.ftp_host }}
         run: |
-          lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --exclude-glob .git/ --exclude-glob .github/ --verbose --only-newer --delete ./ ./; bye"
+          lftp -u $FTP_USERNAME,$FTP_PASSWORD ftp://$FTP_HOST -e "set ssl:verify-certificate no; mirror --exclude-glob .git/ --exclude-glob .github/ --exclude-glob /dev/ --verbose --only-newer --delete ./ ./; bye"
           echo "Listando archivos después de la sincronización FTP:"
           ls -la
           echo "Verificando la existencia del directorio .git:"
@@ -36,15 +36,10 @@ jobs:
           # Asegúrate de que tu token esté almacenado en las Secrets de GitHub
           git remote set-url origin https://x-access-token:${{ secrets.FTP_TOKEN }}@github.com/jlemdo/GitFTP.git
 
-      - name: 🔄 Verificar estado de Git y hacer commit
+      - name: 🔄 Hacer commit de todos los archivos y carpetas
         run: |
-          echo "Estado de Git después de la sincronización FTP:"
-          git status --porcelain
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "No hay cambios para actualizar."
-          else
-            git add .
-            git commit -m "Actualizar cambios desde FTP"
-            git push
-          fi 
-          
+          echo "Estado de Git antes de agregar archivos:"
+          git status
+          git add --all
+          git commit -m "Actualizar cambios desde FTP" || echo "No hay cambios para commit"
+          git push
