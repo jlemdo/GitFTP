@@ -31,7 +31,7 @@ jobs:
 
       - name: 🔄 Sincronizar archivos desde directorio temporal al repositorio local
         run: |
-          rsync -av --delete --ignore-missing-args ftp_download/ ./
+          rsync -av --delete ftp_download/ ./ || (exit_code=$? && [ $exit_code -eq 24 ] && echo "Ignoring vanished files error" || exit $exit_code)
           echo "Listando archivos después de rsync:"
           ls -la
 
